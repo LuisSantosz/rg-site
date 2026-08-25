@@ -7,7 +7,7 @@
  * Troque por um número real no formato internacional, somente dígitos.
  * Exemplo: 5511999999999
  */
-const RENAN_WHATSAPP = "";
+const RENAN_WHATSAPP = "5511976260404";
 
 const DEFAULT_MESSAGE =
   "Olá Renan! Conheci seu trabalho pelo site e gostaria de conversar sobre uma estratégia para o meu negócio.";

@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="theme-color" content="#070807" />
   <meta
     name="description"
@@ -61,11 +61,14 @@
 
       <div class="hero-content container">
         <div class="hero-copy reveal">
-          <p class="eyebrow">Traffic • Social • Growth</p>
-          <h1>
-            Transformo<br />
-            atenção em<br />
-            <span>crescimento.</span>
+          <div class="hero-kicker-row">
+            <p class="eyebrow">Traffic • Social • Growth</p>
+            <span class="availability"><i></i> Agenda aberta</span>
+          </div>
+          <h1 aria-label="Transformo atenção em crescimento">
+            <span class="hero-title-line hero-title-white">Transformo</span>
+            <span class="hero-title-line hero-title-white">atenção em</span>
+            <span class="hero-title-line hero-title-green">crescimento.</span>
           </h1>
 
           <p class="hero-description">
@@ -81,42 +84,43 @@
             <a class="button button-ghost" href="#metodo">Conhecer o método</a>
           </div>
 
-          <a class="explore-link" href="#problema">
-            <span>↓</span> Explore
-          </a>
+          <div class="hero-proof">
+            <span><b>01</b> Estratégia sob medida</span>
+            <span><b>02</b> Decisões orientadas por dados</span>
+          </div>
         </div>
 
         <div class="hero-visual reveal reveal-delay">
+          <div class="portrait-halo" aria-hidden="true"></div>
           <div class="portrait-frame">
             <div class="portrait-grid"></div>
-            <div class="portrait-placeholder">
-              <span>RG</span>
-              <small>Foto do Renan</small>
-            </div>
+            <img class="portrait-photo" src="assets/renan-goncalves.png" alt="Foto de Renan Gonçalves" />
             <div class="portrait-shine"></div>
+            <div class="portrait-fade"></div>
           </div>
 
           <div class="floating-card card-reach">
             <small>Alcance</small>
-            <strong>↗</strong>
-            <span>Crescendo</span>
+            <strong>+184%</strong>
+            <span>nos últimos 90 dias</span>
           </div>
 
           <div class="floating-card card-campaign">
             <i></i>
-            <span>Campanha ativa</span>
+            <span>Campanha ativa</span><b>●</b>
           </div>
 
           <div class="floating-card card-conversion">
-            <small>Conversões</small>
+            <div class="card-label-row"><small>Conversões</small><b>+38%</b></div>
             <div class="mini-bars">
               <b></b><b></b><b></b><b></b><b></b>
             </div>
           </div>
 
           <div class="floating-card card-leads">
-            <small>Leads</small>
-            <strong>+ oportunidades</strong>
+            <small>Leads qualificados</small>
+            <strong>127</strong>
+            <span>este mês ↗</span>
           </div>
         </div>
       </div>
@@ -224,16 +228,17 @@
               <div class="profile-head">
                 <div class="avatar">RG</div>
                 <div>
-                  <strong>@suaempresa</strong>
-                  <small>Estratégia • Conteúdo • Marca</small>
+                  <strong>@aurora.cafe</strong>
+                  <small>Café • Experiências • São Paulo</small>
                 </div>
               </div>
               <div class="profile-stats">
-                <span><b>128</b> posts</span>
-                <span><b>8.4k</b> seguidores</span>
-                <span><b>418</b> seguindo</span>
+                <span><b>142</b> posts</span>
+                <span><b>12,8k</b> seguidores</span>
+                <span><b>486</b> seguindo</span>
               </div>
-              <div class="feed-grid">
+              <div class="profile-bio">Café especial, encontros e histórias.<br />Reserve sua mesa ↓</div>
+              <div class="feed-grid vivid-feed">
                 <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
               </div>
             </div>
@@ -293,26 +298,27 @@
 
         <div class="dashboard reveal">
           <div class="dashboard-top">
-            <span>Performance</span>
+            <span>Performance ilustrativa</span>
             <b><i></i> Dados ativos</b>
           </div>
 
           <div class="dashboard-metrics">
             <article>
-              <small>Alcance</small>
-              <strong>↗</strong>
+              <div><small>Alcance</small><b class="metric-note">Pessoas impactadas</b></div>
+              <strong>+184%</strong>
             </article>
             <article>
-              <small>Conversão</small>
-              <strong>↗</strong>
+              <div><small>Conversão</small><b class="metric-note">De visita para contato</b></div>
+              <strong>6,8%</strong>
             </article>
             <article>
-              <small>Engajamento</small>
-              <strong>↗</strong>
+              <div><small>Engajamento</small><b class="metric-note">Interações com a marca</b></div>
+              <strong>+92%</strong>
             </article>
           </div>
 
           <div class="chart">
+            <div class="chart-tooltip"><small>Melhor semana</small><b>+38% conversões</b></div>
             <svg viewBox="0 0 1000 260" preserveAspectRatio="none" aria-label="Gráfico ilustrativo de crescimento">
               <defs>
                 <linearGradient id="chartFill" x1="0" x2="0" y1="0" y2="1">
@@ -326,7 +332,10 @@
           </div>
 
           <div class="dashboard-caption">
-            <h3>Dados mostram o que aconteceu.</h3>
+            <div>
+              <h3>Dados mostram o que aconteceu.</h3>
+              <span class="demo-label">Exemplo fictício para apresentação</span>
+            </div>
             <p>Estratégia define o que fazemos depois.</p>
           </div>
         </div>
@@ -355,6 +364,11 @@
             <div>
               <p>Diagnóstico</p>
               <h3>Primeiro entendemos.</h3>
+              <p class="method-description">
+                Começamos com uma leitura completa do momento da marca. Analisamos
+                o perfil, o mercado, os concorrentes e o caminho atual do cliente
+                para descobrir gargalos e oportunidades.
+              </p>
               <ul>
                 <li>Negócio</li>
                 <li>Mercado</li>
@@ -362,6 +376,7 @@
                 <li>Público</li>
                 <li>Objetivos</li>
               </ul>
+              <div class="method-deliverable"><i>↳</i><strong>Entrega: mapa de oportunidades e prioridades claras.</strong></div>
             </div>
           </article>
 
@@ -370,6 +385,11 @@
             <div>
               <p>Estratégia</p>
               <h3>Depois planejamos.</h3>
+              <p class="method-description">
+                Transformamos o diagnóstico em um plano sob medida. Definimos
+                posicionamento, mensagens, públicos, linha editorial, campanhas e
+                indicadores para cada ação ter um motivo e uma meta.
+              </p>
               <ul>
                 <li>Posicionamento</li>
                 <li>Conteúdo</li>
@@ -377,6 +397,7 @@
                 <li>Campanhas</li>
                 <li>Metas</li>
               </ul>
+              <div class="method-deliverable"><i>↳</i><strong>Entrega: plano de ação com canais, metas e cronograma.</strong></div>
             </div>
           </article>
 
@@ -385,12 +406,18 @@
             <div>
               <p>Execução</p>
               <h3>Colocamos em prática.</h3>
+              <p class="method-description">
+                A estratégia ganha forma com conteúdos, criativos e campanhas
+                conectados. Organizamos a distribuição e acompanhamos cada ponto
+                de contato para a comunicação chegar às pessoas certas.
+              </p>
               <ul>
                 <li>Conteúdo</li>
                 <li>Criativos</li>
                 <li>Campanhas</li>
                 <li>Distribuição</li>
               </ul>
+              <div class="method-deliverable"><i>↳</i><strong>Entrega: campanhas publicadas e presença digital consistente.</strong></div>
             </div>
           </article>
 
@@ -398,13 +425,19 @@
             <span>04</span>
             <div>
               <p>Otimização</p>
-              <h3>Os dados começam a falar.</h3>
+              <h3>Evoluímos com os dados.</h3>
+              <p class="method-description">
+                Resultados são acompanhados continuamente. Testamos variações,
+                identificamos padrões e realocamos esforços para melhorar o custo,
+                a qualidade dos contatos e a escala do que funciona.
+              </p>
               <ul>
                 <li>Testes</li>
                 <li>Análises</li>
                 <li>Ajustes</li>
                 <li>Escala</li>
               </ul>
+              <div class="method-deliverable"><i>↳</i><strong>Entrega: relatório objetivo e próximos passos recomendados.</strong></div>
             </div>
           </article>
         </div>
@@ -422,54 +455,54 @@
         <div class="cases-heading reveal">
           <h2>Estratégia é boa.<br /><span>Resultado é melhor.</span></h2>
           <p>
-            Os cards abaixo são placeholders. Substitua por cases e métricas reais
-            quando estiverem disponíveis.
+            Exemplos fictícios para demonstrar como os resultados podem ser
+            apresentados. Substitua pelos cases reais quando estiverem disponíveis.
           </p>
         </div>
 
         <div class="case-list">
           <article class="case-card reveal">
             <div class="case-top">
-              <span>Case 01</span>
+              <span>Case demonstrativo 01</span>
               <small>Meta Ads</small>
             </div>
             <div class="case-main">
               <div>
-                <p>Cliente</p>
-                <h3>Nome da empresa</h3>
+                <p>Cliente fictício</p>
+                <h3>Ateliê Aurora</h3>
               </div>
               <div class="case-objective">
                 <p>Objetivo</p>
-                <strong>Gerar novos contatos e aumentar a presença digital.</strong>
+                <strong>Gerar novos contatos para encomendas personalizadas.</strong>
               </div>
             </div>
             <div class="case-metrics">
-              <article><small>Alcance</small><b>+ XX%</b></article>
-              <article><small>Leads</small><b>XXX</b></article>
-              <article><small>ROAS</small><b>X.XX</b></article>
+              <article><small>Alcance</small><b>+164%</b></article>
+              <article><small>Leads</small><b>238</b></article>
+              <article><small>Custo/lead</small><b>−31%</b></article>
             </div>
             <button class="text-link js-case">Ver case ↗</button>
           </article>
 
           <article class="case-card reveal">
             <div class="case-top">
-              <span>Case 02</span>
+              <span>Case demonstrativo 02</span>
               <small>Social</small>
             </div>
             <div class="case-main">
               <div>
-                <p>Cliente</p>
-                <h3>Nome da empresa</h3>
+                <p>Cliente fictício</p>
+                <h3>Clínica Vitta</h3>
               </div>
               <div class="case-objective">
                 <p>Objetivo</p>
-                <strong>Reposicionar o perfil e melhorar a percepção da marca.</strong>
+                <strong>Reposicionar o perfil e construir autoridade local.</strong>
               </div>
             </div>
             <div class="case-metrics">
-              <article><small>Engajamento</small><b>+ XX%</b></article>
-              <article><small>Alcance</small><b>+ XX%</b></article>
-              <article><small>Seguidores</small><b>+ XXX</b></article>
+              <article><small>Engajamento</small><b>+87%</b></article>
+              <article><small>Alcance</small><b>+121%</b></article>
+              <article><small>Seguidores</small><b>+1.940</b></article>
             </div>
             <button class="text-link js-case">Ver case ↗</button>
           </article>
@@ -500,19 +533,16 @@
     <section class="section about" id="sobre">
       <div class="container about-grid">
         <div class="about-photo reveal">
-          <div class="about-photo-placeholder">
-            <span>RG</span>
-            <small>Insira aqui uma foto profissional do Renan</small>
-          </div>
+          <img class="about-photo-img" src="assets/renan-goncalves.png" alt="Retrato profissional de Renan Gonçalves" />
         </div>
 
         <div class="about-copy reveal">
           <span class="eyebrow">Quem está por trás da estratégia</span>
           <h2>Renan<br />Gonçalves.</h2>
           <p>
-            Gestor de tráfego, social media e estrategista digital. Esta área está
-            preparada para receber uma apresentação real sobre experiência,
-            certificações, segmentos atendidos e visão profissional.
+            Gestor de tráfego, social media e estrategista digital focado em
+            transformar atenção em oportunidades. Um trabalho próximo, claro e
+            orientado por objetivos reais do negócio.
           </p>
 
           <blockquote>
@@ -521,8 +551,8 @@
           </blockquote>
 
           <div class="about-links">
-            <a href="#" aria-label="Instagram do Renan">Instagram ↗</a>
-            <a href="#" aria-label="LinkedIn do Renan">LinkedIn ↗</a>
+            <a class="js-whatsapp" href="#" data-source="sobre">WhatsApp ↗</a>
+            <a href="tel:+5511976260404" aria-label="Telefone do Renan">(11) 97626-0404</a>
           </div>
         </div>
       </div>
@@ -532,30 +562,30 @@
     <section class="section testimonials">
       <div class="container">
         <div class="testimonials-heading reveal">
-          <span>Prova social</span>
-          <h2>O que os<br />clientes dizem.</h2>
+          <span>Prova social demonstrativa</span>
+          <h2>Experiências que<br />viram confiança.</h2>
         </div>
 
         <div class="testimonial-track">
           <article class="testimonial-card reveal">
             <p>
-              “Espaço reservado para um depoimento real sobre estratégia,
-              acompanhamento e resultado.”
+              “O planejamento trouxe clareza para o conteúdo e finalmente
+              conseguimos entender quais campanhas geravam contatos de verdade.”
             </p>
             <footer>
-              <strong>Cliente 01</strong>
-              <span>Empresa / segmento</span>
+              <strong>Marina Costa</strong>
+              <span>Ateliê Aurora • exemplo fictício</span>
             </footer>
           </article>
 
           <article class="testimonial-card reveal">
             <p>
-              “Troque este texto por uma experiência real. Quanto mais específico
-              o depoimento, maior a credibilidade.”
+              “O perfil ganhou consistência, a comunicação ficou profissional e
+              passamos a conversar com um público muito mais qualificado.”
             </p>
             <footer>
-              <strong>Cliente 02</strong>
-              <span>Empresa / segmento</span>
+              <strong>Eduardo Lima</strong>
+              <span>Clínica Vitta • exemplo fictício</span>
             </footer>
           </article>
         </div>
@@ -577,29 +607,50 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <a class="brand" href="#topo">RG<span>.</span></a>
-        <p>Renan Gonçalves</p>
-        <small>Traffic • Social • Growth</small>
+    <div class="container">
+      <div class="footer-cta reveal">
+        <div>
+          <span>Pronto para crescer?</span>
+          <h2>Vamos transformar atenção<br />em resultado.</h2>
+        </div>
+        <a class="js-whatsapp" href="#" data-source="footer-cta">Iniciar conversa <b>↗</b></a>
       </div>
 
-      <div class="footer-links">
-        <a href="#servicos">Serviços</a>
-        <a href="#metodo">Método RG</a>
-        <a href="#cases">Cases</a>
-        <a href="#sobre">Sobre</a>
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a class="brand" href="#topo">RG<span>.</span></a>
+          <p>Renan Gonçalves</p>
+          <small>Traffic • Social • Growth</small>
+          <em>Estratégia digital com intenção, dados e movimento.</em>
+        </div>
+
+        <div class="footer-column">
+          <strong>Navegue</strong>
+          <a href="#servicos">Serviços</a>
+          <a href="#metodo">Método RG</a>
+          <a href="#cases">Cases</a>
+          <a href="#sobre">Sobre</a>
+        </div>
+
+        <div class="footer-column">
+          <strong>Especialidades</strong>
+          <span>Gestão de Instagram</span>
+          <span>Tráfego pago</span>
+          <span>Estratégia digital</span>
+          <span>Análise de performance</span>
+        </div>
+
+        <div class="footer-contact">
+          <strong>Vamos conversar</strong>
+          <a class="js-whatsapp" href="#" data-source="footer">WhatsApp ↗</a>
+          <a href="tel:+5511976260404">(11) 97626-0404</a>
+          <small>São Paulo • Atendimento online</small>
+        </div>
       </div>
 
-      <div class="footer-social">
-        <a href="#">Instagram ↗</a>
-        <a href="#">LinkedIn ↗</a>
-        <a class="js-whatsapp" href="#" data-source="footer">WhatsApp ↗</a>
-      </div>
-
-      <div class="footer-copy">
-        <span>© 2026 Renan Gonçalves</span>
-        <a href="#topo">Voltar ao topo ↑</a>
+      <div class="footer-bottom">
+        <span>© 2026 Renan Gonçalves. Todos os direitos reservados.</span>
+        <a href="#topo">Voltar ao topo <b>↑</b></a>
       </div>
     </div>
   </footer>
@@ -635,11 +686,12 @@
   <div class="case-modal" id="caseModal" aria-hidden="true" role="dialog" aria-modal="true">
     <div class="case-modal-box">
       <button class="case-modal-close" id="closeCase" aria-label="Fechar case">×</button>
-      <span>Case completo</span>
-      <h2>Espaço preparado para o case real.</h2>
+      <span>Case demonstrativo</span>
+      <h2>Do diagnóstico ao resultado.</h2>
       <p>
-        Quando tivermos os resultados do cliente, esta janela poderá mostrar
-        contexto, problema, estratégia, criativos, números e conclusão.
+        Os dados exibidos são fictícios e mostram como um case real será
+        apresentado: cenário inicial, objetivo, estratégia aplicada, decisões
+        de otimização e evolução dos indicadores.
       </p>
     </div>
   </div>

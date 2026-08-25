@@ -25,25 +25,16 @@ Abra o arquivo `index.html` no navegador.
 
 ## O que precisa ser configurado
 ### WhatsApp
-Abra `script.js` e altere:
+O número do Renan já foi configurado no `script.js`:
 
 ```js
-const RENAN_WHATSAPP = "";
+const RENAN_WHATSAPP = "5511976260404";
 ```
-
-Exemplo:
-```js
-const RENAN_WHATSAPP = "5511999999999";
-```
-
-Use somente números.
 
 ### Foto do Renan
-No `index.html`, existem dois placeholders:
-- Hero (`.portrait-placeholder`)
-- Sobre (`.about-photo-placeholder`)
+A foto já foi aplicada no Hero e na seção Sobre usando o arquivo:
 
-Quando houver foto, podemos trocar os placeholders por `<img>`.
+`assets/renan-goncalves.png`
 
 ### Instagram / LinkedIn
 Os links ainda estão como `href="#"`.
@@ -58,3 +49,14 @@ Os dados exibidos são placeholders e não representam resultados reais.
 4. Substituir cases por resultados reais.
 5. Inserir depoimentos reais.
 6. Publicar em Firebase Hosting, Vercel ou GitHub Pages.
+
+## Atualização V3 — Responsividade global
+A folha de estilos agora inclui ajustes específicos para:
+- PC e monitores grandes (1600px+)
+- notebooks e desktops compactos (1100–1280px)
+- tablets em retrato e paisagem (700–900px)
+- celulares (380–520px)
+- celulares pequenos (320–380px)
+- telas de pouca altura e orientação landscape
+
+Também foram corrigidos estouros horizontais, escala de tipografia, grids, Hero, cards, dashboard, Método RG, cases, Raio-X, modais e rodapé.
