@@ -4454,6 +4454,15 @@ button {
 }
 
 @media (max-width: 900px) {
+  .site-header.scrolled,
+  body.menu-open .site-header {
+    background: #030403;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+    border-bottom-color: rgba(255,255,255,.12);
+    box-shadow: 0 12px 30px rgba(0,0,0,.48);
+  }
+
   .hero-content { grid-template-columns: 1fr; }
   .hero-copy h1 { max-width: 760px; font-size: clamp(3.8rem, 10.2vw, 5.4rem); }
   .hero-kicker-row { flex-direction: row; align-items: center; }

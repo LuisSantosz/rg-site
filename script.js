@@ -17,7 +17,7 @@ const menuButton = document.querySelector(".menu-button");
 const mobileMenu = document.querySelector(".mobile-menu");
 
 function updateHeader() {
-  header?.classList.toggle("scrolled", window.scrollY > 20);
+  header?.classList.toggle("scrolled", window.scrollY > 6);
 }
 
 function closeMenu() {
