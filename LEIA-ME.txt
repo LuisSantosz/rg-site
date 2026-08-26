@@ -1,0 +1,15 @@
+SITE RENAN GONCALVES — VERSAO ESTATICA
+
+Como abrir:
+1. Extraia o arquivo ZIP.
+2. Abra o arquivo index.html no navegador.
+
+Nao e necessario instalar Node.js, executar npm install ou usar npm run dev.
+
+Arquivos principais:
+- index.html: estrutura e conteudo do site
+- styles.css: visual, responsividade e animacoes
+- script.js: menu, modais, quiz e interacoes
+- assets/: logo e fotografia
+
+Para publicar, envie todos os arquivos e a pasta assets mantendo esta estrutura.
